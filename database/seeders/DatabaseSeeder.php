@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -33,5 +34,8 @@ class DatabaseSeeder extends Seeder
 
         // Call the CategorySeeder class
         $this->call(CategorySeeder::class);
+
+        // Call the BrandSeeder class
+        $this->call(BrandSeeder::class);
     }
 }
