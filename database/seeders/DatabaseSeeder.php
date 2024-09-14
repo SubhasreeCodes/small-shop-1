@@ -30,5 +30,8 @@ class DatabaseSeeder extends Seeder
 
         // Call the CitySeeder class
         $this->call(CitySeeder::class);
+
+        // Call the CategorySeeder class
+        $this->call(CategorySeeder::class);
     }
 }
