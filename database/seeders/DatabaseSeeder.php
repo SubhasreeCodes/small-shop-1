@@ -20,7 +20,22 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
-            'password' => Hash::make('admin')
+            'password' => Hash::make('admin'),
+
+        ]);
+
+        User::factory()->create([
+            'name' => 'balaji',
+            'email' => 'balaji@gmail.com',
+            'password' => Hash::make('balaji'),
+
+        ]);
+
+        User::factory()->create([
+            'name' => 'subha',
+            'email' => 'subha@gmail.com',
+            'password' => Hash::make('subha'),
+
         ]);
 
         // Call the CountrySeeder class
