@@ -19,7 +19,7 @@ class LatestOrders extends TableWidget
         return $table
             ->query(Order::limit(5)->latest())
             ->columns([
-                TextColumn::make('client.email')
+                TextColumn::make('customer.email')
                     ->translateLabel(),
                 TextColumn::make('total_amount')
                     ->translateLabel()
